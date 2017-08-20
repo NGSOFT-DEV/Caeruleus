@@ -1,0 +1,8 @@
+<div id="orientationIndicator" class="orientation-indicator" >
+    <div>
+        <img ng-src="{{orientationIndicatorController.indicatorBackImage}}"/>
+    </div>
+    <div id="orientationIndicationNeedle" class="orientation-indicator-needle" ng-style="{ 'transform' : 'rotate('+-orientationIndicatorController.heading+'rad )'}">
+        <img ng-src="{{orientationIndicatorController.indicatorForeImage}}"/>
+    </div>
+</div>

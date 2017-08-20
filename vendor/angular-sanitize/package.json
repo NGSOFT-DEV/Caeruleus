@@ -1,0 +1,104 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "angular-sanitize",
+        "scope": null,
+        "escapedName": "angular-sanitize",
+        "name": "angular-sanitize",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Projects\\Primula\\vendor"
+    ]
+  ],
+  "_from": "angular-sanitize@latest",
+  "_id": "angular-sanitize@1.5.9",
+  "_inCache": true,
+  "_location": "/angular-sanitize",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/angular-sanitize-1.5.9.tgz_1480018734179_0.3312655268236995"
+  },
+  "_npmUser": {
+    "name": "angularcore",
+    "email": "angular-core+npm@google.com"
+  },
+  "_npmVersion": "2.15.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "angular-sanitize",
+    "scope": null,
+    "escapedName": "angular-sanitize",
+    "name": "angular-sanitize",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-sanitize/-/angular-sanitize-1.5.9.tgz",
+  "_shasum": "e2d7dd8e8587f1342b6d2efdfa67311fcf1f65ed",
+  "_shrinkwrap": null,
+  "_spec": "angular-sanitize",
+  "_where": "C:\\Projects\\Primula\\vendor",
+  "author": {
+    "name": "Angular Core Team",
+    "email": "angular-core+npm@google.com"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "dependencies": {},
+  "description": "AngularJS module for sanitizing HTML",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "e2d7dd8e8587f1342b6d2efdfa67311fcf1f65ed",
+    "tarball": "https://registry.npmjs.org/angular-sanitize/-/angular-sanitize-1.5.9.tgz"
+  },
+  "gitHead": "935bad867e89ec35f1cd6d93a4f779848bc6fa33",
+  "homepage": "http://angularjs.org",
+  "jspm": {
+    "shim": {
+      "angular-sanitize": {
+        "deps": [
+          "angular"
+        ]
+      }
+    }
+  },
+  "keywords": [
+    "angular",
+    "framework",
+    "browser",
+    "html",
+    "client-side"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "name": "angular-sanitize",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.5.9"
+}

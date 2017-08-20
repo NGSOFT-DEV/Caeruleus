@@ -1,0 +1,60 @@
+{
+
+  "viewerOptions":{
+      "animation": false,
+      "baseLayerPicker": false,
+      "geocoder": false,
+      "homeButton": false,
+      "infoBox": false,
+      "sceneModePicker": false,
+      "timeline": false,
+      "navigationHelpButton": false,
+      "selectionIndicator": false,
+      "useDefaultRenderLoop": true,
+      "targetFrameRate": 25,
+      "fullscreenButton":false
+
+
+  },
+
+  "additionalOptions":{
+    "useCesiumMoonSingleImageryProvider": false,
+    "useCesiumNaturalEarth2ImageryProvider": true,
+    "mapServerUrl":"http://localhost:8090/tms/1.0.0/MazavHaumaRastersWeb/",
+    "baseProvider": {
+      "enabled":false,
+      "ObjectInstantiatorService[type]":"Cesium.UrlTemplateImageryProvider",
+      "ObjectInstantiatorService[parameters]":[
+        {
+          "url":"ObjectInstantiatorService[additionalOptions.mapServerUrl]gm_flat/{z}/{x}/{reverseY}.png",
+          "tilingScheme":{
+            "ObjectInstantiatorService[type]": "Cesium.GeographicTilingScheme",
+            "ObjectInstantiatorService[parameters]":[
+              {
+                "rectangle":{
+                  "ObjectInstantiatorService[type]":"Cesium.Rectangle.fromDegrees",
+                  "ObjectInstantiatorService[parameters]":[
+                    -180,
+                    -180,
+                     180,
+                     180
+
+                  ]
+                },
+                "numberOfLevelZeroTilesX": 1,
+                "numberOfLevelZeroTilesY": 1
+              }
+            ]
+          }
+        }
+      ]
+
+    }
+  },
+
+  "sceneOptions":{
+
+  }
+
+
+}

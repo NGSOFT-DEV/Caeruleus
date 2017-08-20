@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 56.0.2924 (Windows 7 0.0.0)" package="" timestamp="2017-02-08T11:50:09" id="0" hostname="Sharon_R-PC" tests="18" errors="0" failures="0" time="0.146">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"/>
+  </properties>
+  <testcase name="OrientationIndicatorDirective Test should CesiumWrapperService exist" time="0.065" classname="Chrome_56_0_2924_(Windows_7_0_0_0).OrientationIndicatorDirective Test"/>
+  <testcase name="OrientationIndicatorDirective Test should SortButtonController exist" time="0.015" classname="Chrome_56_0_2924_(Windows_7_0_0_0).OrientationIndicatorDirective Test"/>
+  <testcase name="CesiumWrapperService Test should exist" time="0.005" classname="Chrome_56_0_2924_(Windows_7_0_0_0).CesiumWrapperService Test"/>
+  <testcase name="GeographicConverterService Test should GeographicConverterService exist" time="0.005" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegToDegMinSec on 0 return &quot;{degrees: 0, minutes: 0, seconds: 0}&quot;" time="0.005" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegToDegMinSec on 0 return &quot;{degrees: 0, minutes: 0, seconds: 0}&quot;" time="0.003" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegToDegMinSec on 18.213 return &quot;{degrees: 18, minutes: 12, seconds: 46.80000000000348}&quot;" time="0.004" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegToDegMinSec on -18.213 return &quot;{degrees: -18, minutes: 12, seconds: 46.80000000000348}&quot;" time="0.005" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegToDegMinSec on 0 return &quot;{degrees: 0, minutes: 0, seconds: 0}&quot;" time="0.003" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDegMinSecToDecimalDegTo on {degrees: 18, minutes: 12, seconds: 46.80000000000348} return 18.213" time="0.002" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDegMinSecToDecimalDegTo on {degrees: -18, minutes: 12, seconds: 46.80000000000348} return -18.213" time="0.016" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegLatLongToUTM on {latitude: 45, longitude: 45, datumName: &quot;WGS84&quot;} return {x:500000, y:4982950.4, zone:38, southHemisphere: false}" time="0.003" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertDecimalDegLatLongToUTM on {latitude: -45, longitude: -45, datumName: &quot;WGS84&quot;} return {x:500000, y:5017049.6, zone:23, southHemisphere: true}" time="0.002" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertUTMToDecimalDeg on {x:500000, y:4982950.4, zone:38, southHemisphere: true, datum: &quot;WGS84&quot;} return {latitude: 44.999999997933244, longitude: 45}" time="0.002" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertUTMToDecimalDeg on {x:500000, y:5017049.6, zone:23, southHemisphere: true, datum: &quot;WGS84&quot;} return {latitude: -45.30695022671, longitude: -45}" time="0.002" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertGeoFromDatumToDatum on {latDeg:0, lonDeg:0, fromDatumName:&quot;WGS84&quot;, toDatumName: &quot;ED50&quot;} return {latitude: 0.001085259838419801, longitude: 0.0008623710448569377}" time="0.002" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertGeoFromDatumToDatum on {latDeg:45, lonDeg:45, fromDatumName:&quot;WGS84&quot;, toDatumName: &quot;ED50&quot;} return {latitude: 45.00076682110597, longitude: 45.0000896785061}" time="0.003" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <testcase name="GeographicConverterService Test should convertGeoFromDatumToDatum on {latDeg:-45, lonDeg:-45, fromDatumName:&quot;WGS84&quot;, toDatumName: &quot;ED50&quot;} return {latitude: -45.00010360481565, longitude: -44.998367802139136}" time="0.004" classname="Chrome_56_0_2924_(Windows_7_0_0_0).GeographicConverterService Test"/>
+  <system-out>
+    <![CDATA[Chrome 56.0.2924 (Windows 7 0.0.0) INFO: '%cApplication: ', 'color: #334CFF', 'Caeruleus'
+,Chrome 56.0.2924 (Windows 7 0.0.0) INFO: '%cVersion: ', 'color: #334CFF', '1.0.0'
+,Chrome 56.0.2924 (Windows 7 0.0.0) INFO: '%cEnvironment: ', 'color: #334CFF', 'development'
+,Chrome 56.0.2924 (Windows 7 0.0.0) INFO: '%cBuild timestamp: ', 'color: #334CFF', Wed Feb 08 2017 13:49:54 GMT+0200 (Jerusalem Standard Time)
+,Chrome 56.0.2924 (Windows 7 0.0.0) INFO: '%cGrunt version: ', 'color: #334CFF', '1.0.1'
+,Chrome 56.0.2924 (Windows 7 0.0.0) LOG: '%c☤', 'color: #334CFF;font-size: 64px;"'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

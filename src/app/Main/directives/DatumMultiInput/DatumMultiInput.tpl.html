@@ -1,0 +1,95 @@
+<div style="position:relative;font-size: 10px;color: white;" >
+    <select style="color: white;background-color:transparent;" ng-model="datumMultiInputController.selectedDatumType" ng-change="datumMultiInputController.datumChanged()">
+        <option style="color: black;"
+            ng-repeat="datumType in datumMultiInputController.datumTypes"
+            value="{{datumType.name}}">
+      {{datumType.name}}
+        </option>
+    </select>
+
+    <!--{{datumMultiInputController.selectedDatumType}}-->
+
+    <select style="color: white;background-color:transparent;" ng-model="datumMultiInputController.selectedCoordinateSystem">
+        <option style="color: black;"
+            ng-repeat="cs in datumMultiInputController.coordinateSystems"
+            value="{{cs.name}}" >
+      {{cs.name}}
+        </option>
+    </select>
+    
+    <!--{{datumMultiInputController.selectedCoordinateSystem}}-->
+
+    <img src="/assets/mapPick.png" style="cursor: pointer;background-color: white;max-width: 14px;position: relative;top: -1px;" ng-click="datumMultiInputController.togglePickFromMap()">
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === datumMultiInputController.coordinateSystems[1].name">
+
+    
+    <span>
+        <input type="number" style="width: 38px;background-color:transparent;" ng-model="datumMultiInputController.degMinSecLongitudeValue.degrees" ng-change="datumMultiInputController.degMinSecChanged()">
+        °
+        
+        <input type="number" style="width: 60px;background-color:transparent;" ng-model="datumMultiInputController.degMinSecLongitudeValue.minutes" ng-change="datumMultiInputController.degMinSecChanged()">
+        '
+        
+        <input type="number" style="width: 60px;background-color:transparent;" ng-model="datumMultiInputController.degMinSecLongitudeValue.seconds" ng-change="datumMultiInputController.degMinSecChanged()">
+        "        
+    </span>
+    אורך
+    </div>
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === datumMultiInputController.coordinateSystems[1].name">
+
+    
+    <span>
+        <input type="number" style="width: 38px;background-color:transparent;" ng-model="datumMultiInputController.degMinSecLatitudeValue.degrees" ng-change="datumMultiInputController.degMinSecChanged()">
+        °
+        
+        <input type="number" style="width: 60px;background-color:transparent;" ng-model="datumMultiInputController.degMinSecLatitudeValue.minutes" ng-change="datumMultiInputController.degMinSecChanged()">
+        '
+        
+        <input type="number" style="width: 60px;background-color:transparent;" ng-model="datumMultiInputController.degMinSecLatitudeValue.seconds" ng-change="datumMultiInputController.degMinSecChanged()">
+        "        
+    </span>
+    רוחב
+    </div>
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === 'עשרוני'">   
+    <span>
+        <input type="number" ng-model="datumMultiInputController.decimalLongitudeValue" style="width: 176px;background-color:transparent;" ng-change="datumMultiInputController.decChanged()">        
+    </span>
+    אורך
+    </div>
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === 'עשרוני'">   
+    <span>
+        <input type="number" ng-model="datumMultiInputController.decimalLatitudeValue"  style="width: 176px;background-color:transparent;" ng-change="datumMultiInputController.decChanged()">        
+    </span>
+    רוחב
+    </div>
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === 'UTM'">   
+    <span>
+        <input type="number" ng-model="datumMultiInputController.utmValue.x" style="width: 176px;background-color:transparent;" ng-change="datumMultiInputController.utmChanged()">        
+    </span>
+    X
+    </div>
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === 'UTM'">   
+    <span>
+        <input type="number" ng-model="datumMultiInputController.utmValue.y"  style="width: 176px;background-color:transparent;" ng-change="datumMultiInputController.utmChanged()">        
+    </span>
+    Y
+    </div>
+
+
+    <div ng-show="datumMultiInputController.selectedCoordinateSystem === 'UTM'">   
+    <span>
+        <input type="number" style="width: 38px;background-color:transparent;" ng-model="datumMultiInputController.utmValue.zone" ng-change="datumMultiInputController.utmChanged()">
+        דרומית לקו המשווה
+        
+        <input type="checkbox" style="width: 60px;background-color:transparent;" ng-model="datumMultiInputController.utmValue.southHemisphere" ng-change="datumMultiInputController.utmChanged()">
+        אזור
+    </span>
+    </div>
+
+</div>

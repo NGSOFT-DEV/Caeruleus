@@ -1,0 +1,1 @@
+node -e "require('grunt').cli({hermesEnvironment:'production'})"

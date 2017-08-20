@@ -1,0 +1,17 @@
+<div class="clock-control">
+    <div class="visual-dials-clock">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" shape-rendering="geometricPrecision" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+            <ellipse ry="45%" rx="45%" cy="50%" cx="50%" style="stroke:#51648e;stroke-width:2px;fill:#262d3b;opacity: 1;"></ellipse>
+        </svg>
+        <svg class="dial" ng-style="{ 'transform' : 'rotate('+-clockControlController.hourDialDeg+'deg )'}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" shape-rendering="geometricPrecision" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+            <line x1="50%" y1="50%" x2="50%" y2="20%" stroke="#51648e" stroke-width = "3"></line>
+        </svg>
+        <svg class="dial" ng-style="{ 'transform' : 'rotate('+-clockControlController.minuteDialDeg+'deg )'}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" shape-rendering="geometricPrecision" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+            <line x1="50%" y1="50%" x2="50%" y2="18%" stroke="#51648e" stroke-width = "2"></line>
+        </svg>
+    </div>
+
+    <span class="clock-textual-display-time">{{clockControlController.getNormalizedTime(clockControlController.hour)}}:{{clockControlController.getNormalizedTime(clockControlController.minutes)}}:{{clockControlController.getNormalizedTime(clockControlController.seconds)}}</span>
+    <span class="clock-textual-display-date">{{clockControlController.getNormalizedTime(clockControlController.day)}}/{{clockControlController.getNormalizedTime(clockControlController.month)}}/{{clockControlController.getNormalizedTime(clockControlController.year)}}</span>
+
+</div>

@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:8020",
+            "webRoot": "${workspaceRoot}/src",
+            "sourceMaps": true
+        },
+        {
+            "name": "Launch index.html (without sourcemaps)",
+            "type": "chrome",
+            "request": "launch",
+            "file": "${workspaceRoot}/"
+        }
+    ]
+}
