@@ -20,7 +20,7 @@
   "additionalOptions":{
     "useCesiumMoonSingleImageryProvider": false,
     "useCesiumNaturalEarth2ImageryProvider": true,
-    "mapServerUrl":"http://localhost:8090/tms/1.0.0/MazavHaumaRastersWeb/",
+    "mapServerUrl":"http://localhost:8090/tms/1.0.0/MHRastersWeb/",
     "baseProvider": {
       "enabled":false,
       "ObjectInstantiatorService[type]":"Cesium.UrlTemplateImageryProvider",
